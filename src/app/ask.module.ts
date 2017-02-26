@@ -25,9 +25,6 @@ import { AskComponent } from './ask.component';
 import { APP_RESOLVER_PROVIDERS } from './ask.resolver';
 import { AppState, InternalStateType } from './ask.service';
 import { HomeComponent } from './home';
-import { AboutComponent } from './about';
-import { NoContentComponent } from './no-content';
-import { XLargeDirective } from './home/x-large';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -51,6 +48,7 @@ type StoreType = {
   bootstrap: [ AskComponent ],
   declarations: [
     AskComponent,
+    HomeComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

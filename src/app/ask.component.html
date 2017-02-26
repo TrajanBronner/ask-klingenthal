@@ -1,1 +1,49 @@
-<div>Hello world</div>
+<!--Navbar-->
+<nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+  <!-- Collapse button-->
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  <div class="container">
+    <!--Collapse content-->
+    <div class="collapse navbar-toggleable-xs" id="collapseEx">
+      <!--Navbar Brand-->
+      <a class="navbar-brand" href="http://klingenthal.fr" target="_blank">Klingenthal</a>
+      <!--Links-->
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./maison.html">Maison de la manufacture <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./ASK.html">L'ASK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./histoire.html">L'histoire</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./boutique.html">Boutique</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!--/.Collapse content-->
+  </div>
+</nav>
+
+<!--<nav>
+  <a [routerLink]=" ['./'] "
+     routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+    Index
+  </a>
+</nav>-->
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+</footer>
