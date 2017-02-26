@@ -1,0 +1,29 @@
+.carousel {
+  height: 50%;
+}
+
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%;
+  }
+}
+
+.carousel-item,
+.active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item:nth-child(1) {
+  background: url('../../img/light/header-1.jpg') no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+}
+
+.carousel-item:nth-child(2) {
+  background: url('../../img/light/header-2.jpg') no-repeat;
+  background-size: cover;
+}

@@ -24,10 +24,10 @@ import { ROUTES } from './ask.routes';
 import { AskComponent } from './ask.component';
 import { APP_RESOLVER_PROVIDERS } from './ask.resolver';
 import { AppState, InternalStateType } from './ask.service';
-import { HomeComponent } from './home';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
+import { HomeModule } from './home/home.module';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -47,12 +47,12 @@ type StoreType = {
 @NgModule({
   bootstrap: [ AskComponent ],
   declarations: [
-    AskComponent,
-    HomeComponent
+    AskComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
     FormsModule,
+    HomeModule,
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],

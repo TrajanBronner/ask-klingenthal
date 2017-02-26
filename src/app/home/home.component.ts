@@ -8,8 +8,6 @@ import {
 
 @Component({
   selector: 'hl-ask-home',
-  providers: [
-  ],
   styleUrls: [ './home.component.css' ],
   templateUrl: './home.component.html'
 })
